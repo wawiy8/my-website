@@ -1,0 +1,105 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Enable smooth scroll when clicking nav links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed; /* sticks to top */
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7); /* semi-transparent */
+  z-index: 1000; /* stays above everything */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff9500; /* orange highlight */
+}
+
+/* Parallax Section Setup */
+.parallax {
+  height: 100vh; /* full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Background Images for each section */
+.parallax1 {
+  background-image: url('tokyo.jpg');
+}
+
+.parallax2 {
+  background-image: url('hanoi.jpg');
+}
+
+.parallax3 {
+  background-image: url('vientiane.jpg');
+}
+
+.parallax4 {
+  background-image: url('bangkok.jpg');
+}
+
+/* Content Sections */
+.content {
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.content p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+
